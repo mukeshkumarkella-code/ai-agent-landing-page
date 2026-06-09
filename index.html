@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Custom AI Agents for small and medium-sized business operations. Design, build, deploy, and manage secure, affordable, and practical AI assistants to reduce costs and increase efficiency.">
+    <title>AI Agent Automation Company | Custom AI Business Assistants</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Gradient Grids -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                    <path d="M7 14V10C7 8.89543 7.89543 8 9 8H15C16.1046 8 17 8.89543 17 10V14" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="10" cy="12" r="1.5" fill="var(--color-cyan)"/>
+                    <circle cx="14" cy="12" r="1.5" fill="var(--color-purple)"/>
+                    <path d="M10 16H14" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="var(--color-cyan)"/>
+                            <stop offset="1" stop-color="var(--color-purple)"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>NexusAgent</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#integrations">Integrations</a>
+                <a href="#roi-calc">ROI Calculator</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#cta-form" class="btn btn-secondary-nav" id="nav-cta-btn">Book Consultation</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="badge">Next-Gen AI Workforce</span>
+                    </div>
+                    <h1>Supercharge Your Business Operations with <span class="gradient-text">Custom AI Agents</span></h1>
+                    <p class="hero-desc">We design, build, and deploy secure, affordable, and practical AI business assistants for North American SMBs. Reduce overhead, eliminate manual bottlenecks, and scale operations 24/7.</p>
+                    <div class="hero-actions">
+                        <a href="#cta-form" class="btn btn-primary" id="hero-primary-cta">Book AI Readiness Call</a>
+                        <a href="#use-cases" class="btn btn-secondary" id="hero-secondary-cta">Explore Agent Templates</a>
+                    </div>
+                    <div class="hero-trust-subtext">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 4L6 11.3333L2.66667 8" stroke="var(--color-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Zero complex setup required. We handle deployment, training, and maintenance.</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Dynamic Live AI Agent Chat Simulator -->
+                    <div class="agent-simulator glass-panel">
+                        <div class="sim-header">
+                            <div class="sim-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="sim-title">NexusAgent Sim v1.02</div>
+                            <div class="sim-status"><span class="status-indicator"></span>Active</div>
+                        </div>
+                        <div class="sim-chat-area" id="sim-chat-area">
+                            <!-- Populated dynamically by script.js -->
+                        </div>
+                        <div class="sim-input-area">
+                            <div class="sim-input-box">Ask agent to run operational workflows...</div>
+                            <button class="sim-send-btn" id="sim-run-btn" aria-label="Run Simulator">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 3L19 12L5 21V3Z" fill="var(--color-cyan)"/>
+                                </svg>
+                                <span>Run Demo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRUST BAR -->
+        <section class="trust-bar" id="trust-bar">
+            <div class="container">
+                <p class="trust-label">Empowering Automation Across High-Impact Industries</p>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <div class="trust-item"><span>Real Estate & Mortgage</span></div>
+                        <div class="trust-item"><span>Construction & Logistics</span></div>
+                        <div class="trust-item"><span>Property Management</span></div>
+                        <div class="trust-item"><span>Accounting & Tax Firms</span></div>
+                        <div class="trust-item"><span>Law Offices</span></div>
+                        <div class="trust-item"><span>Medical & Health Clinics</span></div>
+                        <div class="trust-item"><span>Retail & E-commerce</span></div>
+                        <div class="trust-item"><span>Educational Institutions</span></div>
+                    </div>
+                    <!-- Duplicate for infinite scrolling effect -->
+                    <div class="marquee-content" aria-hidden="true">
+                        <div class="trust-item"><span>Real Estate & Mortgage</span></div>
+                        <div class="trust-item"><span>Construction & Logistics</span></div>
+                        <div class="trust-item"><span>Property Management</span></div>
+                        <div class="trust-item"><span>Accounting & Tax Firms</span></div>
+                        <div class="trust-item"><span>Law Offices</span></div>
+                        <div class="trust-item"><span>Medical & Health Clinics</span></div>
+                        <div class="trust-item"><span>Retail & E-commerce</span></div>
+                        <div class="trust-item"><span>Educational Institutions</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROBLEM SECTION -->
+        <section class="problems" id="problems">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">The True Cost of Manual Operations</h2>
+                    <p class="section-subtitle">Small and medium businesses are losing time and money to repetitive tasks that shouldn't require human hours.</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card glass-panel">
+                        <div class="problem-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Drowning in Admin Work</h3>
+                        <p>Your team spends up to 40% of their day answering standard emails, coordinating schedules, and manually syncing data instead of driving high-value growth.</p>
+                    </div>
+                    <div class="problem-card glass-panel">
+                        <div class="problem-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3>Skyrocketing Overhead</h3>
+                        <p>Hiring dedicated staff for simple data entry or triage is no longer financially viable. Overhead rises while productivity remains plateaued.</p>
+                    </div>
+                    <div class="problem-card glass-panel">
+                        <div class="problem-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Missed Lead Opportunities</h3>
+                        <p>Leads coming in after hours or during peak operations go unanswered. Slow response times cause potential customers to seek out faster competitors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SOLUTION SECTION -->
+        <section class="solution" id="solution">
+            <div class="container solution-grid">
+                <div class="solution-visual">
+                    <div class="flow-chart-panel glass-panel">
+                        <div class="flow-header">
+                            <span>Workflow Automation System</span>
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <div class="flow-steps">
+                            <div class="flow-step current">
+                                <div class="step-lbl">Client Inquiry</div>
+                                <div class="step-val">"I need to book a property viewing tomorrow at 2 PM."</div>
+                            </div>
+                            <div class="flow-arrow">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                            </div>
+                            <div class="flow-step agent-step">
+                                <div class="step-lbl">AI Agent (Real Estate)</div>
+                                <div class="step-val">Checked CRM database & MLS calendar. Booked viewing slot. Sent SMS.</div>
+                            </div>
+                            <div class="flow-arrow">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                            </div>
+                            <div class="flow-step end-step">
+                                <div class="step-lbl">Synced Systems</div>
+                                <div class="step-val">Google Calendar, HubSpot CRM, Slack notification updated.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-content">
+                    <div class="badge-container">
+                        <span class="badge badge-accent">The Solution</span>
+                    </div>
+                    <h2>Meet Your New AI Workforce</h2>
+                    <p class="desc">Deploy practical, robust digital assistants built directly into your operations. NexusAgent designs bespoke AI Agents that handle repetitive workloads securely, matching your exact business rules.</p>
+                    <ul class="solution-points">
+                        <li>
+                            <div class="point-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>24/7/365 Autonomous Run</strong>
+                                <p>Agents respond to clients, qualify hot leads, and execute data workflows even while your human team is asleep.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Native Software Integrations</strong>
+                                <p>No migration required. Agents interface directly with Microsoft 365, Google Workspace, Salesforce, HubSpot, and Slack.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Human-in-the-Loop Safeguards</strong>
+                                <p>Complex cases are flagged and triaged to your team automatically, preserving brand integrity and trust.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CORE SERVICES -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">End-to-End AI Automation, Handled Entirely For You</h2>
+                    <p class="section-subtitle">We don't just write prompts. We design, deploy, and maintain custom operational infrastructure.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-panel">
+                        <div class="service-num">01</div>
+                        <h3>AI Consultation & Mapping</h3>
+                        <p>We analyze your business processes, conduct automation readiness assessments, identify workflows with high ROI, and compute realistic cost savings projections.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-num">02</div>
+                        <h3>AI Agent Development</h3>
+                        <p>Bespoke AI assistants programmed using state-of-the-art frameworks (LangGraph, CrewAI). Custom trained on your manuals, guidelines, and document structures.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-num">03</div>
+                        <h3>Seamless System Deployment</h3>
+                        <p>Secure cloud configurations (AWS, Azure, GCP) or private server setups to host agent code, databases, vector stores, and custom endpoints safely.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-num">04</div>
+                        <h3>Ongoing Managed Services</h3>
+                        <p>24/7 system health checks, security patches, continuous prompt optimization, model retraining, and monthly performance reports.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PRE-BUILT AGENT TEMPLATES (USE CASES) -->
+        <section class="use-cases" id="use-cases">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">AI Agents Tailored to Your Industry</h2>
+                    <p class="section-subtitle">Explore functional templates built to handle specific department goals and workflows.</p>
+                </div>
+                
+                <div class="tabs-container glass-panel">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="real-estate">Real Estate & Mortgage</button>
+                        <button class="tab-btn" data-tab="construction">Construction & Logistics</button>
+                        <button class="tab-btn" data-tab="hr">HR & Recruiting</button>
+                        <button class="tab-btn" data-tab="support">Customer Support</button>
+                    </div>
+                    <div class="tabs-content">
+                        <!-- Real Estate Tab -->
+                        <div class="tab-pane active" id="real-estate">
+                            <div class="tab-grid">
+                                <div class="tab-info">
+                                    <h3>MLS Integrated Real Estate Agent</h3>
+                                    <p class="tab-desc">Qualifies outbound and inbound buyer/seller leads, coordinates appointments, queries internal and MLS listings, and automates CRM updates.</p>
+                                    <ul class="tab-features">
+                                        <li><span>Lead qualification & source tagging</span></li>
+                                        <li><span>Dynamic appointment scheduling via Cal.com/Calendly</span></li>
+                                        <li><span>MLS databases querying & listing summaries</span></li>
+                                        <li><span>Outbound client email & text follow-ups</span></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-visual">
+                                    <div class="tab-code-block">
+                                        <div class="code-line"><span class="c-key">agent</span> = RealEstateAgent(database=<span class="c-val">"MLS_Live"</span>)</div>
+                                        <div class="code-line"><span class="c-key">inbound</span> = Lead(source=<span class="c-val">"Web_Chat"</span>, budget=<span class="c-val">"$850k"</span>)</div>
+                                        <div class="code-line"><span class="c-comment"># Qualifying lead and scheduling...</span></div>
+                                        <div class="code-line"><span class="c-key">status</span> = agent.qualify(inbound)</div>
+                                        <div class="code-line"><span class="c-key">print</span>(status)</div>
+                                        <div class="code-line c-output">> Lead Qualified. Property viewings sent. Slot booked for June 10, 3:00 PM. CRM Updated.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Construction Tab -->
+                        <div class="tab-pane" id="construction">
+                            <div class="tab-grid">
+                                <div class="tab-info">
+                                    <h3>Estimating & Operations Agent</h3>
+                                    <p class="tab-desc">Processes request-for-quotes (RFQs), drafts base estimations from material sheets, coordinates vendor notifications, and tracks project permit documents.</p>
+                                    <ul class="tab-features">
+                                        <li><span>Quote drafting & itemized cost calculators</span></li>
+                                        <li><span>Subcontractor and supplier RFP messaging</span></li>
+                                        <li><span>Permit tracker & submission status updates</span></li>
+                                        <li><span>Document scanning & invoice processing</span></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-visual">
+                                    <div class="tab-code-block">
+                                        <div class="code-line"><span class="c-key">agent</span> = ConstructionAgent(integration=<span class="c-val">"Procore"</span>)</div>
+                                        <div class="code-line"><span class="c-key">rfq</span> = File.load(<span class="c-val">"project_blueprint_102.pdf"</span>)</div>
+                                        <div class="code-line"><span class="c-comment"># Extracting materials and matching price libraries...</span></div>
+                                        <div class="code-line"><span class="c-key">estimate</span> = agent.estimate_materials(rfq)</div>
+                                        <div class="code-line"><span class="c-key">print</span>(estimate.summary)</div>
+                                        <div class="code-line c-output">> Materials: 520 Tons Concrete, 12 Tons Steel. Estimated cost: $142,500. Vendor quotes requested.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HR Tab -->
+                        <div class="tab-pane" id="hr">
+                            <div class="tab-grid">
+                                <div class="tab-info">
+                                    <h3>HR & Employee Onboarding Assistant</h3>
+                                    <p class="tab-desc">Screens incoming job applications against skill matrices, manages interview calendars, updates hiring desks, and leads new hires through onboarding documentation.</p>
+                                    <ul class="tab-features">
+                                        <li><span>Resume indexing & qualification checking</span></li>
+                                        <li><span>Candidate scheduling coordination</span></li>
+                                        <li><span>Automatic onboarding handbook Q&A</span></li>
+                                        <li><span>Compliance checklist validation</span></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-visual">
+                                    <div class="tab-code-block">
+                                        <div class="code-line"><span class="c-key">agent</span> = HRAgent(workspace=<span class="c-val">"Google_HR_Drive"</span>)</div>
+                                        <div class="code-line"><span class="c-key">resume</span> = Applicant.get_latest()</div>
+                                        <div class="code-line"><span class="c-comment"># Screening candidate for developer position...</span></div>
+                                        <div class="code-line"><span class="c-key">passed</span> = agent.screen(resume, criteria=<span class="c-val">"Python & LangGraph"</span>)</div>
+                                        <div class="code-line"><span class="c-key">print</span>(passed)</div>
+                                        <div class="code-line c-output">> Match Found: 92% compatibility. Invitation for Technical Round sent. Calendar synced.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Tab -->
+                        <div class="tab-pane" id="support">
+                            <div class="tab-grid">
+                                <div class="tab-info">
+                                    <h3>Omnichannel Customer Support Agent</h3>
+                                    <p class="tab-desc">Operates your live web chat and support email addresses. Answers FAQs using internal knowledge bases, resolves common billing issues, and escalates complex tickets.</p>
+                                    <ul class="tab-features">
+                                        <li><span>24/7 instantaneous FAQ responses</span></li>
+                                        <li><span>Multi-channel support (Web, Email, SMS, Slack)</span></li>
+                                        <li><span>Account and billing action processing (Secure API)</span></li>
+                                        <li><span>Intelligent ticket routing & SLA tracking</span></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-visual">
+                                    <div class="tab-code-block">
+                                        <div class="code-line"><span class="c-key">agent</span> = SupportAgent(kb=<span class="c-val">"FAQ_Vector_Store"</span>)</div>
+                                        <div class="code-line"><span class="c-key">ticket</span> = Ticket.inbox.get_next()</div>
+                                        <div class="code-line"><span class="c-comment"># Resolving invoice dispute...</span></div>
+                                        <div class="code-line"><span class="c-key">resolution</span> = agent.resolve(ticket)</div>
+                                        <div class="code-line"><span class="c-key">print</span>(resolution)</div>
+                                        <div class="code-line c-output">> Invoice #1024 verified. Billing difference credited ($42.00). Client notified via email. Ticket Closed.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. HOW IT WORKS -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">From Discovery to Automation in 4 Simple Steps</h2>
+                    <p class="section-subtitle">We design and integrate agents with minimal disruption to your daily operations.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-badge">1</div>
+                        <h3>AI Readiness Audit</h3>
+                        <p>We analyze your business workflows, isolate tasks sucking up human labor, evaluate compatibility, and run cost-benefit projections.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-badge">2</div>
+                        <h3>Agent Architecture & Prompts</h3>
+                        <p>Our engineers build customized agents using advanced frameworks (LangGraph, CrewAI) tailored with security parameters and custom prompt trees.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-badge">3</div>
+                        <h3>Workspace & API Integration</h3>
+                        <p>We hook the agent code securely into your company APIs, CRMs, communication channels, and document repositories (HubSpot, Slack, Teams).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-badge">4</div>
+                        <h3>Launch & Continuous Optimization</h3>
+                        <p>We monitor logs, adjust agent prompt boundaries, apply security patches, and switch to advanced LLMs to lower API fees and raise speed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. INTEGRATIONS & TECH STACK -->
+        <section class="integrations" id="integrations">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Integrates Natively with Your Tech Ecosystem</h2>
+                    <p class="section-subtitle">We connect AI Agents directly into the tools and platforms your team already uses every day.</p>
+                </div>
+                <div class="integrations-container glass-panel">
+                    <div class="integ-grid">
+                        <div class="integ-category">
+                            <h4>Workspaces & Chats</h4>
+                            <div class="logo-list">
+                                <span class="logo-tag">Microsoft 365</span>
+                                <span class="logo-tag">Google Workspace</span>
+                                <span class="logo-tag">Slack</span>
+                                <span class="logo-tag">Microsoft Teams</span>
+                            </div>
+                        </div>
+                        <div class="integ-category">
+                            <h4>CRMs & Platforms</h4>
+                            <div class="logo-list">
+                                <span class="logo-tag">Salesforce</span>
+                                <span class="logo-tag">HubSpot</span>
+                                <span class="logo-tag">QuickBooks</span>
+                                <span class="logo-tag">Shopify</span>
+                            </div>
+                        </div>
+                        <div class="integ-category">
+                            <h4>Core Tech Under the Hood</h4>
+                            <div class="logo-list">
+                                <span class="logo-tag model-tag">LangGraph</span>
+                                <span class="logo-tag model-tag">CrewAI</span>
+                                <span class="logo-tag model-tag">GPT Models</span>
+                                <span class="logo-tag model-tag">Gemini Models</span>
+                                <span class="logo-tag model-tag">Claude Models</span>
+                                <span class="logo-tag model-tag">PostgreSQL</span>
+                                <span class="logo-tag model-tag">Vector Databases</span>
+                                <span class="logo-tag model-tag">Google Cloud / AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. ROI CALCULATOR & SUCCESS METRICS -->
+        <section class="roi-calc" id="roi-calc">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Calculate Your Monthly Operational ROI</h2>
+                    <p class="section-subtitle">Input your metrics to estimate time savings and budget recuperation with custom AI Agents.</p>
+                </div>
+                
+                <div class="roi-container grid-2">
+                    <!-- Calculator Inputs -->
+                    <div class="roi-inputs glass-panel">
+                        <h3>Your Team's Numbers</h3>
+                        
+                        <div class="input-group">
+                            <div class="slider-header">
+                                <label for="hours-slider">Manual Admin Hours (Weekly)</label>
+                                <span class="slider-val" id="hours-val">20</span>
+                            </div>
+                            <input type="range" id="hours-slider" min="5" max="150" value="20" class="slider">
+                            <span class="slider-help">Time spent by your staff on scheduling, emails, data entry, FAQs, etc.</span>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="slider-header">
+                                <label for="rate-slider">Average Employee Rate ($/Hour)</label>
+                                <span class="slider-val" id="rate-val">30</span>
+                            </div>
+                            <input type="range" id="rate-slider" min="15" max="120" value="30" class="slider">
+                            <span class="slider-help">Average hourly salary (including benefits) of staff handling these tasks.</span>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="slider-header">
+                                <label for="agents-slider">Number of Workflows/Employees affected</label>
+                                <span class="slider-val" id="agents-val">3</span>
+                            </div>
+                            <input type="range" id="agents-slider" min="1" max="15" value="3" class="slider">
+                            <span class="slider-help">Number of operations or team members carrying out these manual processes.</span>
+                        </div>
+                    </div>
+
+                    <!-- Calculator Results -->
+                    <div class="roi-results glass-panel">
+                        <h3>Estimated Performance Outcomes</h3>
+                        
+                        <div class="result-highlight">
+                            <div class="res-label">Monthly Savings</div>
+                            <div class="res-value" id="savings-amount">$1,920</div>
+                            <p class="res-subtext">Recuperated staff costs currently wasted on repetitive, low-value work.</p>
+                        </div>
+
+                        <div class="stats-mini-grid">
+                            <div class="mini-stat-card">
+                                <div class="mini-label">Hours Reclaimed</div>
+                                <div class="mini-val" id="hours-saved">240 hrs</div>
+                                <div class="mini-sub">per month</div>
+                            </div>
+                            <div class="mini-stat-card">
+                                <div class="mini-label">Workflows Handled</div>
+                                <div class="mini-val">100%</div>
+                                <div class="mini-sub">autonomously</div>
+                            </div>
+                        </div>
+
+                        <div class="roi-cta-wrap">
+                            <a href="#cta-form" class="btn btn-primary btn-block">Lock in Your ROI Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. SECURITY & PRIVACY GUARANTEE -->
+        <section class="security" id="security">
+            <div class="container security-grid">
+                <div class="security-content">
+                    <div class="badge-container">
+                        <span class="badge badge-warning">Security & Privacy First</span>
+                    </div>
+                    <h2>Enterprise Security for Small & Medium Businesses</h2>
+                    <p class="desc">We build under strict compliance protocols. Your business data remains fully isolated, and your competitive secrets are kept secure.</p>
+                    
+                    <div class="security-pillars">
+                        <div class="sec-pillar">
+                            <div class="sec-pill-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Data Isolation & Boundaries</h4>
+                                <p>We configure private vector databases and run processes inside isolated cloud environments (AWS, GCP, Azure) so your credentials never leak.</p>
+                            </div>
+                        </div>
+                        <div class="sec-pillar">
+                            <div class="sec-pill-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>No Public Model Training</h4>
+                                <p>We enforce explicit APIs settings ensuring that none of your client inquiries or database records are ever used by OpenAI, Google, or Anthropic to retrain public models.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="security-visual">
+                    <div class="sec-shield-panel glass-panel text-center">
+                        <div class="shield-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#shieldGrad)" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <defs>
+                                    <linearGradient id="shieldGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="var(--color-cyan)"/>
+                                        <stop offset="1" stop-color="var(--color-purple)"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Certified Compliance Core</h3>
+                        <p>Our agent pipelines leverage strict RAG structures and API key isolation. Every action logs directly to your local workspace, offering complete visibility.</p>
+                        <div class="sec-badges-row">
+                            <span class="sec-badge">Private LLM API</span>
+                            <span class="sec-badge">AES-256 Encryption</span>
+                            <span class="sec-badge">Human Audit Rails</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. PRICING & REVENUE MODELS -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Sleek, Scalable Investment Plans</h2>
+                    <p class="section-subtitle">No hidden consulting fees. Transparent pricing options based on your workflow size and operational complexity.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Tier 1 -->
+                    <div class="price-card glass-panel">
+                        <div class="price-tier">Consultation</div>
+                        <div class="price-cost">$500<span>/Session</span></div>
+                        <p class="price-desc">In-depth assessment of your business processes, custom ROI mapping, and a technical architecture design brief.</p>
+                        <hr class="price-sep">
+                        <ul class="price-features">
+                            <li><span>Full business process analysis</span></li>
+                            <li><span>Automation opportunity matrix</span></li>
+                            <li><span>API compatibility check</span></li>
+                            <li><span>Estimated ROI calculations report</span></li>
+                        </ul>
+                        <a href="#cta-form" class="btn btn-secondary btn-block">Book Workshop</a>
+                    </div>
+
+                    <!-- Tier 2 (Popular) -->
+                    <div class="price-card glass-panel featured">
+                        <div class="popular-tag">Popular</div>
+                        <div class="price-tier">Custom Agent Build</div>
+                        <div class="price-cost">From $2,000<span>/One-time</span></div>
+                        <p class="price-desc">Full custom design, prompt construction, vector database deployment, and CRM integration of a single operational AI Agent.</p>
+                        <hr class="price-sep">
+                        <ul class="price-features">
+                            <li><span>1 Custom AI Agent setup</span></li>
+                            <li><span>Native CRM & email integration</span></li>
+                            <li><span>LangGraph logic / prompt trees</span></li>
+                            <li><span>30 days post-launch support</span></li>
+                        </ul>
+                        <a href="#cta-form" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="price-card glass-panel">
+                        <div class="price-tier">Managed Services</div>
+                        <div class="price-cost">From $199<span>/Month</span></div>
+                        <p class="price-desc">Ongoing maintenance, API monitoring, bug fixes, custom prompt tweaking, and regular model updates to keep agents peak performing.</p>
+                        <hr class="price-sep">
+                        <ul class="price-features">
+                            <li><span>24/7 server health monitoring</span></li>
+                            <li><span>Model API optimization updates</span></li>
+                            <li><span>Security compliance patches</span></li>
+                            <li><span>Monthly analytical report card</span></li>
+                        </ul>
+                        <a href="#cta-form" class="btn btn-secondary btn-block">Subscribe Now</a>
+                    </div>
+                </div>
+
+                <div class="enterprise-pricing glass-panel text-center">
+                    <h3>Need Enterprise Scale or Hybrid Infrastructure?</h3>
+                    <p>We build multi-agent clusters, private on-premise infrastructure setups, and custom models for enterprise operations. Packages range from $25,000 to $250,000+.</p>
+                    <a href="#cta-form" class="btn btn-secondary">Contact Enterprise Sales</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. FREQUENTLY ASKED QUESTIONS -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Clear answers to common questions about adopting and hosting AI agents.</p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item glass-panel">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Will the AI Agent make mistakes or "hallucinate" with clients?</span>
+                            <span class="faq-icon">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <p>No. Unlike raw ChatGPT windows, we build agents using RAG (Retrieval-Augmented Generation) and deterministic state machines (via LangGraph). The agent is restricted to acting on facts from your manuals and databases. If a client asks an out-of-bounds question, the agent automatically flags and queues the request for your human staff.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>How long does it take to build and deploy a custom agent?</span>
+                            <span class="faq-icon">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Simple agency use-case templates (e.g. Real estate calendar bookings, standard customer FAQ chatbots) take 2 to 4 weeks to customize and integrate. Complex operational agents that pull deep database values and perform multi-system updates (e.g. Construction estimation or custom ERP sync) take 6 to 12 weeks from draft to launch.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>What happens if an AI model or API changes down the road?</span>
+                            <span class="faq-icon">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Our Monthly Managed Services plan fully covers this scenario. We actively check for breaking changes in OpenAI, Google Gemini, and Anthropic APIs. Our team handles the code updates, refactors prompt trees, and optimizes settings, ensuring your business workflows remain uninterrupted.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Is my corporate and client data safe?</span>
+                            <span class="faq-icon">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes. Security is our priority. We set up private API pathways and deploy database endpoints in secure, dedicated cloud projects on AWS or GCP. We also enforce strict enterprise data boundaries, ensuring your operational logs and emails are never shared or used to train third-party public models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. FINAL CTA & FOOTER -->
+        <section class="final-cta" id="final-cta">
+            <div class="container">
+                <div class="cta-card glass-panel grid-2">
+                    <div class="cta-info">
+                        <h2>Ready to Put Your Operations on Autopilot?</h2>
+                        <p>Schedule a 30-minute AI readiness call with our automation architects. We'll identify your company's top 3 automation opportunities and map out a projected ROI model.</p>
+                        <div class="cta-bullets">
+                            <div class="bullet">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="3"><path d="M20 6L9 17l-5-5"></path></svg>
+                                <span>30-Min Operations Review</span>
+                            </div>
+                            <div class="bullet">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="3"><path d="M20 6L9 17l-5-5"></path></svg>
+                                <span>Custom ROI Blueprint</span>
+                            </div>
+                            <div class="bullet">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="3"><path d="M20 6L9 17l-5-5"></path></svg>
+                                <span>No Coding/Setup Commitments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-form-container" id="cta-form">
+                        <form class="consultation-form" id="consultation-form">
+                            <div class="form-title">Request Free Assessment</div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f-name">Full Name</label>
+                                    <input type="text" id="f-name" required placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f-email">Work Email</label>
+                                    <input type="email" id="f-email" required placeholder="john@company.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f-website">Company Website</label>
+                                    <input type="url" id="f-website" placeholder="https://company.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f-industry">Primary Bottleneck</label>
+                                    <select id="f-industry">
+                                        <option value="admin">Repetitive admin / Email answering</option>
+                                        <option value="leads">Lead follow-up / Scheduling</option>
+                                        <option value="support">Customer service ticketing</option>
+                                        <option value="estimation">Invoicing / Operations estimation</option>
+                                        <option value="other">Other business operations</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Schedule Assessment</button>
+                            <div id="form-response" class="form-response hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#logoGradFoot)" stroke-width="2.5"/>
+                        <path d="M7 14V10C7 8.89543 7.89543 8 9 8H15C16.1046 8 17 8.89543 17 10V14" stroke="url(#logoGradFoot)" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="10" cy="12" r="1.5" fill="var(--color-cyan)"/>
+                        <circle cx="14" cy="12" r="1.5" fill="var(--color-purple)"/>
+                        <path d="M10 16H14" stroke="url(#logoGradFoot)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logoGradFoot" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="var(--color-cyan)"/>
+                                <stop offset="1" stop-color="var(--color-purple)"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>NexusAgent</span>
+                </a>
+                <p>Empowering businesses to work smarter through secure, affordable, and practical AI automation solutions.</p>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 NexusAgent Inc. All rights reserved. Registered North American AI Automation Partner.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
